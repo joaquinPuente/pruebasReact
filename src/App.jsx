@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Cartas from './assets/Components/Cartas'
 import Carrusel from './assets/Components/Carrusel'
 import Navbar from './assets/Components/Navbar'
+import HookUseState from './assets/Components/HookUseState'
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Navbar/>
       <Carrusel/>
       <Cartas/>
+      <HookUseState/>
     </div>
   )
 }
