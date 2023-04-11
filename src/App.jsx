@@ -22,7 +22,7 @@ function App() {
       <Navbar/>
       
       <Routes>
-      <Route path='/carrusel' element={<Carrusel/>} />
+      <Route path='/' element={<Carrusel/>} />
       <Route path='/productos' element={<Cartas/>} />
       </Routes>
       <Footer/>

@@ -5,9 +5,12 @@ import { NavLink } from 'react-router-dom';
 const Navbar = () => {
   return (
     <div>
-    <Nav>
+    <Nav
+      activeKey="/home"
+      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+    >
       <Nav.Item>
-        <Nav.Link href="/carrusel">Inicio</Nav.Link>
+        <Nav.Link href="/">Inicio</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link href="/productos">Productos</Nav.Link>
