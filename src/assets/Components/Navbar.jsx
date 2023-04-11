@@ -7,7 +7,6 @@ const Navbar = () => {
     <div>
     <Nav
       activeKey="/home"
-      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
     >
       <Nav.Item>
         <Nav.Link href="/">Inicio</Nav.Link>
