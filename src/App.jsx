@@ -9,6 +9,8 @@ import Navbar from './assets/Components/Navbar'
 import HookUseState from './assets/Components/HookUseState'
 import NumberList from './assets/Components/NumberList'
 import HookUseEffect from './assets/Components/HookUseEffect'
+import { Route, BrowserRouter, Routes} from 'react-router-dom'
+import Footer from './assets/Components/Footer'
 
 
 function App() {
@@ -16,12 +18,16 @@ function App() {
 
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar/>
-      <Carrusel/>
-      <Cartas/>
-      <HookUseState/>
-      <NumberList/>
-      <HookUseEffect/>
+      
+      <Routes>
+      <Route path='/carrusel' element={<Carrusel/>} />
+      <Route path='/productos' element={<Cartas/>} />
+      </Routes>
+      <Footer/>
+      </BrowserRouter>
+      
     </div>
   )
 }

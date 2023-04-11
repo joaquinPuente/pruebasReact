@@ -5,7 +5,7 @@ import Shoe from '../Img/shoes.jpg'
 const Carrusel = () => {
   return (
     <div>
-    <Carousel>
+    <Carousel className=''>
       <Carousel.Item>
         <img
           className="d-block w-100"

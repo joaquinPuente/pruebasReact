@@ -1,18 +1,16 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div>
-    <Nav
-      activeKey="/home"
-      onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-    >
+    <Nav>
       <Nav.Item>
-        <Nav.Link href="/home">Inicio</Nav.Link>
+        <Nav.Link href="/carrusel">Inicio</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="link-1">Categorias</Nav.Link>
+        <Nav.Link href="/productos">Productos</Nav.Link>
       </Nav.Item>
       <Nav.Item>
         <Nav.Link eventKey="link-2">Contacto</Nav.Link>
